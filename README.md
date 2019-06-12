@@ -3,9 +3,14 @@ This is a tool used at IM(included LINE, Facebook Messenger, Instagram)
 
 
 Environment： 
+
             anaconda、jupyternotebook
             Python 3.6 version
+            
 IM version：
+
             LINE              ：Desktop version
+            
             Facebook Messenger：Microsoft Store version    
+            
             Instagram         ：Microsoft Store version
