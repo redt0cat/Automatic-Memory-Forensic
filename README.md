@@ -7,6 +7,11 @@ Environment：
             anaconda、jupyternotebook
             Python 3.6 version
             
+Environment Package：          
+            
+            regex
+            tkinter
+            
 IM version：
 
             LINE              ：Desktop version
