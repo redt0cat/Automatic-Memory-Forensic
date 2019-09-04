@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
-
 
 from tkinter import *
-import tkinter.filedialog
-import requests, re, time, csv   #導入 
+import tkinter.filedialogp
+import requests, re, time, csv   #導入
+
 root = Tk()
 root.title("IM Automated Filter")    #視窗標題
 root.geometry("750x500")             #視窗寬度高度
@@ -19,9 +18,6 @@ def choosefile():
         lb.config(text = ""+filename);
     else:
         lb.config(text = "尚未選擇");
-
-
-# In[8]:
 
 
 #LINE的正規化   
@@ -74,9 +70,6 @@ def regLINEANDROID():
     lb2.config(text = ""+regex) 
 
 
-# In[9]:
-
-
 #FB的正規化    
 def regFBWIN10():
     global regex
@@ -104,11 +97,7 @@ def regFBANDROID():
             \"\,\"name\"\:\"?.{1,30}              #傳送方名稱
             \"\,\"email.{1,30}
             )'''
-    lb2.config(text = ""+regex)    
-
-
-# In[10]:
-
+    lb2.config(text = ""+regex)
 
 #IG的正規化   
 def regIGWIN10():
@@ -137,10 +126,6 @@ def regIGANDROID():
             )'''
     lb2.config(text = ""+regex)
 
-
-# In[11]:
-
-
 def filter():
     fp = open(filename)
     string = fp.readlines()
@@ -153,10 +138,6 @@ def filter():
     fp.close()
     fo.close()
     endtime = time.clock()             # 輸出執行時間
-
-
-# In[12]:
-
 
 lbchoose = Label(root,text = 'Instant Messenger Automated Filter',bg="#81D8D0",font="Georgia 25 bold") 
 lbchoose.place(x=40,y=10)
@@ -191,28 +172,3 @@ btnst.place(x=350,y=400)
 
 
 root.mainloop()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-

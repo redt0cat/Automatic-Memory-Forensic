@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[9]:
-
-
 from tkinter import *
 import tkinter.filedialog
-import requests, re, time, csv   #導入 
+import requests, re, time, csv   #導入
+
 root = Tk()
 root.title("IM Automated Filter")    #視窗標題
 root.geometry("700x400")             #視窗寬度高度
@@ -19,10 +17,6 @@ def choosefile():
         lb.config(text = ""+filename);
     else:
         lb.config(text = "尚未選擇");
-
-
-# In[10]:
-
 
 #LINE的正規化   
 def regLINEWIN10():
@@ -71,11 +65,7 @@ def regLINEANDROID():
             true\\t?
             message\\n\'\,.....................................................
             )'''
-    lb2.config(text = ""+regex) 
-
-
-# In[11]:
-
+    lb2.config(text = ""+regex)
 
 def filter():
     fp = open(filename)
@@ -89,10 +79,6 @@ def filter():
     fp.close()
     fo.close()
     endtime = time.clock()             # 輸出執行時間
-
-
-# In[ ]:
-
 
 lbchoose = Label(root,text = 'Instant Messenger Automated Filter',bg="#81D8D0",font="Georgia 25 bold") 
 lbchoose.place(x=40,y=10)
@@ -116,28 +102,3 @@ btnst.place(x=30,y=260)
 
 
 root.mainloop()
-
-
-# In[5]:
-
-
-
-
-
-# In[6]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
